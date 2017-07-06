@@ -1,14 +1,14 @@
 // Handles and update the state/store 
 import { combineReducers}  from 'redux';
-import { routerReducer } from 'react-router-dom';
+import { routerReducer } from 'react-router-redux';
 
 import posts from './posts';
-import commments from './comments';
+import comments from './comments';
 
 const rootReducer = combineReducers({
   posts, 
   comments, 
-  router: routerReducer 
+  routing: routerReducer 
 });
 
 export default rootReducer;
