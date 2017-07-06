@@ -6,8 +6,8 @@ import Main from './Main';
 function mapStateToProps(state) {
   return {
     posts: state.posts,
-    comment: state.commments
-  };
+    comments: state.comments
+  }
 }
 
 function mapDispatchToProps(dispatch) {
@@ -17,3 +17,4 @@ function mapDispatchToProps(dispatch) {
 const App = connect(mapStateToProps, mapDispatchToProps)(Main);
 
 export default App;
+
