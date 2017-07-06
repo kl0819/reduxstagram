@@ -6,7 +6,6 @@ function posts(state = [], action) {
     case 'INCREMENT_LIKES' :
       console.log('Incrementing Likes!!');
       const i = action.index;
-      
       return [
         ...state.slice(0,i), // before updating
         {...state[i], likes: state[i].likes + 1},
